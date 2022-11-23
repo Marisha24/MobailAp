@@ -114,7 +114,7 @@
         android:layout_marginStart="112dp"
         android:layout_marginTop="156dp"
         app:srcCompat="@drawable/course"
-        />
+        android:contentDescription="TODO" />
 
 
     <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->

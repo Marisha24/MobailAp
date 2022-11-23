@@ -7,6 +7,85 @@
     android:background="@color/mainColore"
     tools:context=".LikeActivity">
 
+<!--    <EditText-->
+<!--        android:id="@+id/etID"-->
+<!--        android:layout_width="266dp"-->
+<!--        android:layout_height="51dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="204dp"-->
+<!--        android:hint="ID"-->
+<!--        android:textColor="#0C0C0C"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/constraintLayout"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView3"></EditText>-->
+
+    <EditText
+        android:id="@+id/etRecipe"
+        android:layout_width="266dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:textColor="#0C0C0C"
+        android:hint="Название"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"></EditText>
+
+    <EditText
+        android:id="@+id/etTechnology"
+        android:layout_width="240dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:hint="Технология"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/etRecipe"></EditText>
+
+<!--    <Button-->
+<!--        android:id="@+id/btnApdate"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="116dp"-->
+<!--        android:layout_marginEnd="135dp"-->
+<!--        android:text="Apdate"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/constraintLayout"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/etID"></Button>-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="266dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/etTechnology">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"></Button>
+
+        <Button
+            android:id="@+id/btnRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read"></Button>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"></Button>
+    </LinearLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="67dp"
@@ -105,5 +184,16 @@
         app:layout_anchorGravity="center"
         app:layout_constraintStart_toEndOf="@+id/constraintLayout"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="342dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="194dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/etTechnology" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
